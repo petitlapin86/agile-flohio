@@ -1,0 +1,320 @@
+/*Site Wide*/
+* {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*---------------------------------------------------*/
+/*NAVIGATION BAR*/
+.navbar {
+  text-align: center;
+  background-color:  #032f26;  /*#04372c;*/ /*set the background color*/
+  width: 100%; /*make the nav full screen width*/
+  height: 125px;
+  margin: 0;
+  display: grid; /*using css grid layout*/
+  grid-template-columns: 1fr auto 1fr; /*create 3 columns with grid*/
+  grid-template-rows: 1fr 1fr;
+}
+
+/*NAVBAR GRID COLUMNS*/
+#navbar__grid--title { /*I thought about combining this with navbar__title but it seemed like keeping the grid seperate would be better for reusability?*/
+  grid-column: 2; /*positioning centered*/
+  grid-row: 1;
+  padding-top: 30px;
+}
+#navbar__grid--menu{
+  grid-column: 2; /*positioning centered*/
+  grid-row: 2;
+  padding-top: 10px;
+}
+#navbar__grid--right { /*I thought about combining this with navbar__link but it seemed like keeping the grid seperate would be better for reusability?*/
+  grid-column: 3; /*positioning on the right*/
+  padding: 15px;
+  text-align: right;
+}
+
+/*This is navbar menu items*/
+.navbar__title {
+  text-decoration: none; /*get rid of default blue link underline*/
+  text-transform: uppercase;
+  color: white;
+  font-size: 40px;
+  font-family: 'Raleway';
+}
+/*This is navbar menu items*/
+.navbar__link {
+  text-decoration: none; /*get rid of default blue link underline*/
+  text-transform: uppercase;
+  color: #d0bcb3; /*#B2A59F*/
+  font-size: 15px;
+  padding: 15px;
+}
+/*This is navbar social icons*/
+.navbar__social {
+  width: 30px;
+  height: 30px;
+}
+
+/*---------------------------------------------------*/
+/*COMMON STYLES THROUGHOUT*/
+h1 {
+font-family: 'Alegreya Sans';
+font-size: 60px;
+color: white;
+text-align: center;
+}
+
+h3 {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 25px;
+}
+
+p {
+color: white;
+text-align: center;
+padding: 40px;/*adding padding so the left justified content is centered*/
+line-height: 30px;
+}
+
+/*LIST ITEM STYLING*/
+ul,li {
+  list-style-type: none;
+  text-align: left;
+  color: #d0bcb3;
+  padding: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.li__header {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.table__header {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+
+}
+
+/*BUTTON STYLING*/
+.button {
+	box-shadow:inset 0px 1px 0px 0px #1e6053;
+	background-color:#032f26;
+	border-radius:5px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: "Raleway";
+	font-size:15px;
+  padding: 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1e6053;
+  align-items: center;
+  text-align: center;
+}
+.button:hover {
+	background-color:#043f33;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+/*---------------------------------------------------*/
+/*MAIN INTRO PAGE STYLING*/
+.intro {
+  background-image: url("../img/homepage-background.png");
+  background-size: cover;
+  height: 500px;
+  margin: 0;
+  align-items: center;
+  align-content: center;
+  text-align: center; /*intro full screen width*/
+  display: grid; /*using css grid layout*/
+  grid-template-columns: 1fr auto 1fr; /*create 3 column with grid*/
+  grid-template-rows: 1fr 1fr 1fr 1fr; /*create 4 rows*/
+  }
+
+  #intro__grid--top {
+    grid-row: 2; /*positioning top row*/
+    grid-column: 1 / 4; /*telling it to span full width of all columns*/
+  }
+  #intro__grid--bottom {
+    grid-row: 3; /*positioning bottom row*/
+    grid-column: 2; /*positioning center column*/
+  }
+
+  /*---------------------------------------------------*/
+  /*MUSIC STYLING*/
+  /*this will hopefully change a lot once we introduce javascript and i can make custom controls*/
+  .music {
+    border: 2px solid black;
+    border-radius: 33px;
+    background-color: #f1f3f4;
+  }
+
+  /*---------------------------------------------------*/
+  /*FIND US STYLING*/
+  .findUs {
+    text-align: center;
+    margin: 0;
+    display: grid; /*using css grid layout*/
+    grid-template-columns: 1fr 1fr; /*create 1 column with grid*/
+    grid-template-rows: 1fr 1fr; /*create 4 rows*/
+    }
+
+    #findUs__grid--left {
+      grid-row: 1/3; /*fill all of left side row*/
+      grid-column: 1;
+    }
+    #findUs__grid--right {
+      grid-row: 1/3; /*fill all of right side row*/
+      grid-column: 2;
+    }
+    .hours{
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    /*---------------------------------------------------*/
+    /*MENU STYLING*/
+    .menu {
+      background-image: url("../images/hottoddy.jpeg");
+      background-size: cover;
+      height: 500px;
+      margin: 0;
+      align-items: center;
+      align-content: center;
+      text-align: center; /*intro full screen width*/
+      display: grid; /*using css grid layout*/
+      grid-template-columns: 1fr 1fr 1fr 1fr; /*create 3 column with grid*/
+      grid-template-rows: 1fr 1fr 1fr; /*create 4 rows*/
+      }
+
+      #menu__grid--left {
+        grid-row: 2; /*positioning top row*/
+        grid-column: 2; /*telling it to span full width of all columns*/
+      }
+      #menu__grid--right {
+        grid-row: 2; /*positioning bottom row*/
+        grid-column: 3; /*positioning center column*/
+      }
+
+      .menu__eat, .menu__drink { /*These were H2 but because of the target they are now a links I am styling*/
+        font-size: 60px;
+        font-family:'Alegreya Sans';
+        color:white;
+        text-decoration: none;
+      }
+
+      .menu__eat:hover, .menu__drink:hover {
+        border-bottom: 2px solid white; /*create an underline on hover*/
+      }
+
+      .drinks {
+        display: grid; /*using css grid layout*/
+        grid-template-columns: 1fr 1fr 1fr; /*create 3 column with grid*/
+        grid-template-rows: 1fr; /*create 4 rows*/
+      }
+
+      .eat {
+        align-items: center;
+        align-content: center;
+        text-align: center; /*intro full screen width*/
+        display: grid; /*using css grid layout*/
+        grid-template-columns: 1fr; /*create 3 column with grid*/
+        grid-template-rows: 1fr 1fr; /*create 4 rows*/
+
+      }
+
+      #drinks__grid--left {
+        grid-row: 1; /*positioning bottom row*/
+        grid-column: 1; /*positioning center column*/
+      }
+
+      #drinks__grid--center {
+        grid-row: 1; /*positioning bottom row*/
+        grid-column: 2; /*positioning center column*/
+      }
+
+      #drinks__grid--right {
+        grid-row: 1; /*positioning bottom row*/
+        grid-column: 3; /*positioning center column*/
+      }
+
+      #eat__grid--center {
+        grid-row: 1; /*positioning bottom row*/
+        grid-column: 1/4; /*positioning center column*/
+      }
+
+      .scratch {
+        line-height: 30px; /*adding line height so it matches the li items above it*/
+      }
+
+      /*---------------------------------------------------*/
+      /*SPOTLIGHT STYLING*/
+      .spotlight {
+        background-image: url("../images/fire.jpeg");
+        background-size: cover;
+        height: 500px;
+        margin: 0;
+        align-items: center;
+        align-content: center;
+        text-align: center; /*intro full screen width*/
+        display: grid; /*using css grid layout*/
+        grid-template-columns: 1fr 1fr 1fr 1fr; /*create 3 column with grid*/
+        grid-template-rows: 1fr 1fr 1fr; /*create 4 rows*/
+        }
+
+        #spotlight__grid--left {
+          grid-row: 1; /*positioning bottom row*/
+          grid-column: 1; /*positioning center column*/
+        }
+
+        #spotlight__grid--center {
+          grid-row: 1; /*positioning bottom row*/
+          grid-column: 2; /*positioning center column*/
+        }
+
+        #spotlight__grid--right {
+          grid-row: 1; /*positioning bottom row*/
+          grid-column: 3; /*positioning center column*/
+        }
+
+/*---------------------------------------------------*/
+/*FOOTER STYLING*/
+footer {
+  text-align: center;
+  background-color: #032f26; /*set the background color*/
+  width: 100%; /*make the footer full screen width*/
+  height: 125px;
+  margin: 0;
+  display: grid; /*using css grid layout*/
+  grid-template-columns: 1fr; /*create 1 column with grid*/
+  grid-template-rows: 1fr 1fr 1fr; /*create 4 rows*/
+  }
+
+  #footer__grid--middle {
+    grid-row: 2; /*center footer content*/
+  }
+
+
+  /*---------------------------------------------------*/
+  .print__only {
+    display: none;
+  }
