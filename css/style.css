@@ -18,6 +18,7 @@ html,body {  /*This sets background images to full height*/
   font-size: 22px;
   padding: 15px;
   font-family: 'Raleway';
+  text-shadow: 2px 1px 1px rgba(235,65,65,.60);
 }
 /*This is navbar social icons*/
 .navbar__social {
@@ -54,7 +55,10 @@ h3 {
 p {
 color: white;
 text-align: center;
-line-height: 30px;
+font-size: 12px;
+text-shadow: 2px 1px 1px rgba(235,65,65,.60);
+
+/*#EB4141;*/
 }
 
 /*LIST ITEM STYLING*/
@@ -211,7 +215,7 @@ min-height: 100%;
   /*FOOTER STYLING*/
   #main__grid--footer {
       grid-row: 6; /*center footer content*/
-      grid-column: 2/4;
+      grid-column: 3;
     }
 
 
