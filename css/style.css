@@ -131,6 +131,27 @@ background-repeat: no-repeat;
 min-height: 100%;
 }
 
+.live { /*LIVE.HTML*/
+background-image: url("../img/live-background.png");
+background-size: cover;
+background-repeat: no-repeat;
+min-height: 100%;
+}
+
+.shows { /*SHOWS.HTML*/
+background-image: url("../img/shows-background.png");
+background-size: cover;
+background-repeat: no-repeat;
+min-height: 100%;
+}
+
+.booking { /*BOOKING.HTML*/
+background-image: url("../img/shows-background.png");
+background-size: cover;
+background-repeat: no-repeat;
+min-height: 100%;
+}
+
 /*---------------------------------------------------*/
 /*MAIN GRID USED THROUGHOUT*/
 .main {
