@@ -23,4 +23,6 @@ https://trello.com/b/YNpV6WbB/cs634paigejones
 
 IMAGES:
 
-Background images were licensed and purchased from adobestock.com then edited and customized using photoshop and illustrator by me.
+- Background images were licensed and purchased from adobestock.com then edited and customized using photoshop and illustrator by me.
+
+- All of the content was written by me. 

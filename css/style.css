@@ -127,7 +127,7 @@ img {
   align-self: center;
   align-content: center;
   border: none;
-  width: 50%;
+  width: 100px;
   margin-left: 20%;
   margin-bottom: 20px;
   display: grid; /*using css grid layout*/
@@ -208,7 +208,7 @@ min-height: 100%;
 
   #main__grid--abovecard--span {
     grid-row: 2; /*positioning top row*/
-    grid-column: 2/4; /*telling it to span full width of all columns*/
+    grid-column: 2/6; /*telling it to span full width of all columns*/
   }
 
 
@@ -296,11 +296,26 @@ min-height: 100%;
      width: 50px;
    }
 
+  #input {
+    border: 3px solid yellow;
+    width: 300px;
+    padding: .5em;
+    margin: .5em;
+    font-size: 16px;
+  }
+
   #main__grid--signup { /*sign up text styling*/
        grid-row: 7; /*center signup content*/
        grid-column: 2/5;
        padding-top: 40px;
      }
+
+  #main__grid--form {
+    grid-row: 4/8; /*positioning top row*/
+    grid-column: 2/5;
+    background-color: white;
+    min-height: 100%;
+  }
 
   #main__grid--button {
        grid-row: 8; /*align arrow content*/
