@@ -196,7 +196,7 @@ min-height: 100%;
   /*---------------------------------------------------*/
   /*HEADER TEXT*/
   #main__grid--left {
-    grid-row: 3/5; /*positioning top row*/
+    grid-row: 3/8; /*positioning top row*/
     grid-column: 2; /*telling it to span full width of all columns*/
 
   }
@@ -282,11 +282,19 @@ min-height: 100%;
     padding-bottom: 20%;
    }
 
+   #main__grid--booking {
+     grid-row: 4/8; /*positioning top row*/
+     grid-column: 2/5;
+     background-image: url("../img/bookingpolicy.png");
+     background-size: contain;
+     background-repeat: no-repeat;
+     min-height: 100%;
+     min-width: 100%;
+   }
 
    .arrows {
      width: 50px;
    }
-
 
   #main__grid--signup { /*sign up text styling*/
        grid-row: 7; /*center signup content*/
@@ -298,6 +306,11 @@ min-height: 100%;
        grid-row: 8; /*align arrow content*/
        grid-column: 3;
      }
+
+ #booking__button {
+   grid-row: 7; /*align arrow content*/
+   grid-column: 4;
+ }
 
      #main__grid--leftarrow {
         grid-row: 5; /*align arrow content*/
@@ -317,7 +330,7 @@ min-height: 100%;
   /*FOOTER STYLING*/
   #main__grid--footer {
       grid-row: 9; /*center footer content*/
-      grid-column: 3;
+      grid-column: 2/5;
     }
 
   /*---------------------------------------------------*/
