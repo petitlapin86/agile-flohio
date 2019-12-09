@@ -275,15 +275,34 @@ min-height: 100%;
    }
 
 
+   .arrows {
+     width: 50px;
+   }
+
+
   #main__grid--signup { /*sign up text styling*/
-       grid-row: 7; /*center footer content*/
+       grid-row: 7; /*center signup content*/
        grid-column: 2/5;
      }
 
   #main__grid--button {
-       grid-row: 8; /*center footer content*/
+       grid-row: 8; /*align arrow content*/
        grid-column: 3;
      }
+
+     #main__grid--leftarrow {
+        grid-row: 5; /*align arrow content*/
+        grid-column: 1;
+        }
+
+    #main__grid--rightarrow {
+        grid-row: 5; /*align arrow content*/
+        grid-column: 5;
+        }
+
+
+
+
 
   /*---------------------------------------------------*/
   /*FOOTER STYLING*/
