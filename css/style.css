@@ -189,6 +189,12 @@ min-height: 100%;
     grid-column: 2; /*telling it to span full width of all columns*/
   }
 
+  #main__grid--abovecard--span {
+    grid-row: 2; /*positioning top row*/
+    grid-column: 2/4; /*telling it to span full width of all columns*/
+  }
+
+
   #main__grid--abovecard--center {
     grid-row: 2; /*positioning top row*/
     grid-column: 3; /*telling it to span full width of all columns*/
