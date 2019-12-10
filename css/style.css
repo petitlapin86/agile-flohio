@@ -155,6 +155,11 @@ img {
 	top:1px;
 }
 
+#nohoverbutton:hover {
+  background-color:white;
+  color:black;
+}
+
 
 /*---------------------------------------------------*/
 /*BACKGROUND IMAGES*/
