@@ -34,11 +34,11 @@ text-shadow: 2px 1px 1px rgba(235,65,65,.60);
 
 h2 { /*Page headings*/
 font-family: 'Raleway';
-font-size: 55px;
+font-size: 50px;
 color: white;
 text-align: left;
+line-height: 20px;
 text-transform: uppercase;
-line-height: 20%;
 text-shadow: 2px 1px 1px rgba(235,65,65,.60);
 }
 
@@ -180,7 +180,7 @@ min-height: 100%;
 }
 
 .shows { /*SHOWS.HTML*/
-background-image: url("../img/shows-background.png");
+background-image: url("../img/booking-background.png");
 background-size: cover;
 background-repeat: no-repeat;
 min-height: 100%;
@@ -296,7 +296,7 @@ min-height: 100%;
    }
 
    #main__grid--booking {
-     grid-row: 4/8; /*positioning top row*/
+     grid-row: 3/8; /*positioning top row*/
      grid-column: 2/5;
      background-image: url("../img/bookingpolicy.png");
      background-size: contain;
@@ -305,9 +305,31 @@ min-height: 100%;
      min-width: 100%;
    }
 
-   .arrows {
-     width: 50px;
+   .bookit {
+     padding-left: 50%;
+     padding-top: 41%;
    }
+
+   #main__grid--bookingcomplete {
+     grid-row: 4/8; /*positioning top row*/
+     grid-column: 2/5;
+     background-image: url("../img/bookings.png");
+     background-size: contain;
+     background-repeat: no-repeat;
+     min-height: 100%;
+     min-width: 100%;
+   }
+
+   #main__grid--alertcomplete {
+     grid-row: 4/8; /*positioning top row*/
+     grid-column: 2/5;
+     background-image: url("../img/alerts.png");
+     background-size: contain;
+     background-repeat: no-repeat;
+     min-height: 100%;
+     min-width: 100%;
+   }
+
 
   #input {
     border: 3px solid yellow;
@@ -357,6 +379,9 @@ min-height: 100%;
         grid-column: 5;
         }
 
+        .arrows {
+          width: 50px;
+        }
 
 
 
