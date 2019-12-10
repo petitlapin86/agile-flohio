@@ -141,7 +141,6 @@ img {
   width: 100px;
   justify-content: center;
   margin-bottom: 20px;
-  display: grid; /*using css grid layout*/
   text-align: center;
   display: inline-grid;
 }
@@ -259,40 +258,39 @@ min-height: 100%;
      grid-row: 3/7; /*positioning top row*/
      grid-column: 2;
      background-color: white;
-     margin-right: 10%;
      min-height: 100%;
      min-width: 90%;
-     height: 200px;
+     max-width: 90%;
+     height: 250px;
      width: 200px;
-     padding-bottom: 20%;
-
+     margin-right: 5px;
+     padding-bottom: 25%;
    }
 
    #main__grid--card2 {
      grid-row: 3/7; /*positioning top row*/
      grid-column: 3;
      background-color: white;
-     margin-right: 10%;
+     margin-right: 5px;
      min-height: 100%;
      min-width: 90%;
-     height: 200px;
+     max-width: 90%;
+     height: 250px;
      width: 200px;
-     padding-bottom: 20%;
-
-
-
+     padding-bottom: 25%;
    }
 
    #main__grid--card3 {
      grid-row: 3/7; /*positioning top row*/
      grid-column: 4;
      background-color: white;
-     margin-right: 10%;
      min-height: 100%;
      min-width: 90%;
-     height: 200px;
+     max-width: 90%;
+     margin-right: 5px;
+     height: 250px;
      width: 200px;
-    padding-bottom: 20%;
+     padding-bottom: 25%;
    }
 
    #main__grid--booking {
