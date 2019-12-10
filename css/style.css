@@ -29,6 +29,7 @@ color: white;
 text-align: center;
 text-transform: uppercase;
 line-height: 20%;
+text-shadow: 2px 1px 1px rgba(235,65,65,.60);
 }
 
 h2 { /*Page headings*/
@@ -38,6 +39,7 @@ color: white;
 text-align: left;
 text-transform: uppercase;
 line-height: 20%;
+text-shadow: 2px 1px 1px rgba(235,65,65,.60);
 }
 
 h3 { /*card headings*/
