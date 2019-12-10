@@ -48,6 +48,8 @@ h3 { /*card headings*/
   text-transform: uppercase;
   text-align: left;
   margin-left: 25px;
+  -webkit-text-stroke-width: .2px;
+ -webkit-text-stroke-color: black;
 }
 
 h4 {
@@ -306,6 +308,11 @@ min-height: 100%;
    .bookit {
      padding-left: 50%;
      padding-top: 41%;
+   }
+
+   #request__button {
+     width: 150px; /*override button width for longer button label*/
+     margin-top: 15px;
    }
 
    #main__grid--bookingcomplete {
